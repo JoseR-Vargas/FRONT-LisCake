@@ -121,9 +121,16 @@ body {
 .nav-logo {
 	font-size: 1.8rem;
 	font-weight: 700;
-	color: #444;
 	text-decoration: none;
-	background: linear-gradient(45deg, #E8F5E8, #F0EBFF);
+	background: linear-gradient(45deg, #2E7D32, #6A1B9A);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #2E7D32; /* Fallback para navegadores que no soporten background-clip */
+}
+
+.nav-logo:hover {
+	background: linear-gradient(45deg, #6A1B9A, #2E7D32);
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
