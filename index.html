@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LisCake — Budines y bizcochos artesanales</title>
+	<meta name="description" content="Budines y bizcochos artesanales en Montevideo. Precio único: $200 UYU. Pedí por WhatsApp.">
+	
+	<!-- Open Graph -->
+	<meta property="og:title" content="LisCake — Budines y bizcochos artesanales">
+	<meta property="og:description" content="Budines y bizcochos artesanales en Montevideo. Precio único: $200 UYU. Pedí por WhatsApp.">
+	<meta property="og:image" content="/img/cake.jpg">
+	<meta property="og:type" content="website">
+	
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="LisCake — Budines y bizcochos artesanales">
+	<meta name="twitter:description" content="Budines y bizcochos artesanales en Montevideo. Precio único: $200 UYU. Pedí por WhatsApp.">
+	<meta name="twitter:image" content="/img/cake.jpg">
+	
+	<!-- Favicon placeholder -->
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+	
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<!-- Header -->
+	<header class="header" id="header">
+		<nav class="nav">
+			<div class="nav-container">
+				<a href="#hero" class="nav-logo">LisCake</a>
+				<ul class="nav-menu">
+					<li><a href="#producto" class="nav-link">Producto</a></li>
+					<li><a href="#como-comprar" class="nav-link">Cómo comprar</a></li>
+					<li><a href="#contacto" class="nav-link">Contacto</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Hero Section -->
+	<section class="hero" id="hero">
+		<div class="hero-container">
+			<div class="hero-content">
+				<h1 class="hero-title">LisCake</h1>
+				<p class="hero-tagline">Budines y bizcochos artesanales con sabor casero.</p>
+				<p class="hero-price">Precio único: <strong>$200 UYU</strong></p>
+				<p class="hero-coverage">Montevideo y alrededores.</p>
+				<div class="hero-cta">
+					<a href="https://wa.me/59899123456" class="btn btn-primary" target="_blank" rel="noopener">
+						<span aria-label="WhatsApp">📱</span> Hacer pedido por WhatsApp
+					</a>
+					<a href="https://instagram.com/liscake_uy" class="btn btn-secondary" target="_blank" rel="noopener">
+						<span aria-label="Instagram">📷</span> Ver novedades en Instagram
+					</a>
+				</div>
+			</div>
+			<div class="hero-image">
+				<img src="img/cake.jpg" alt="Budines artesanales LisCake" class="hero-img">
+			</div>
+		</div>
+	</section>
+
+	<!-- Producto -->
+	<section class="producto" id="producto">
+		<div class="container">
+			<h2 class="section-title">Nuestro Producto</h2>
+			<div class="producto-card">
+				<div class="card-content">
+					<h3 class="card-title">Budines y Bizcochos Artesanales</h3>
+					<p class="card-description">
+						Elaborados con ingredientes frescos y recetas caseras, nuestros budines y bizcochos 
+						son perfectos para acompañar tu merienda o para regalar a alguien especial.
+					</p>
+					<p class="card-price">$200 UYU</p>
+					<div class="card-flavors">
+						<h4>Sabores disponibles:</h4>
+						<ul>
+							<li>Chocolate</li>
+							<li>Vainilla</li>
+							<li>Limón</li>
+							<li>Naranja</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Cómo Comprar -->
+	<section class="como-comprar" id="como-comprar">
+		<div class="container">
+			<h2 class="section-title">Cómo Comprar</h2>
+			<div class="steps">
+				<div class="step">
+					<div class="step-number">1</div>
+					<h3 class="step-title">Elegí tu sabor</h3>
+					<p class="step-description">Seleccioná entre nuestros deliciosos sabores disponibles.</p>
+				</div>
+				<div class="step">
+					<div class="step-number">2</div>
+					<h3 class="step-title">Pedí por WhatsApp</h3>
+					<p class="step-description">Contactanos directamente o usá nuestro formulario de contacto.</p>
+				</div>
+				<div class="step">
+					<div class="step-number">3</div>
+					<h3 class="step-title">Retirás o coordinamos envío</h3>
+					<p class="step-description">Elegí si retirás en nuestro local o coordinamos el envío.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Formulario -->
+	<section class="contacto" id="contacto">
+		<div class="container">
+			<h2 class="section-title">Hacé tu Pedido</h2>
+			<form class="contact-form" id="contactForm">
+				<div class="form-group">
+					<label for="nombre" class="form-label">Nombre *</label>
+					<input type="text" id="nombre" name="nombre" class="form-input" required>
+					<div class="form-helper" id="nombreHelper"></div>
+				</div>
+    
+				<div class="form-group">
+					<label for="telefono" class="form-label">Teléfono *</label>
+					<input type="tel" id="telefono" name="telefono" class="form-input" required>
+					<div class="form-helper" id="telefonoHelper"></div>
+				</div>
+				
+				<div class="form-group">
+					<label for="opcion" class="form-label">Modalidad</label>
+					<select id="opcion" name="opcion" class="form-select">
+						<option value="retiro">Retiro en local</option>
+						<option value="envio">Envío a domicilio</option>
+					</select>
+				</div>
+				
+				<div class="form-group">
+					<label for="mensaje" class="form-label">Mensaje</label>
+					<textarea id="mensaje" name="mensaje" class="form-textarea" rows="4" placeholder="Sabor preferido, cantidad, horario de entrega, etc."></textarea>
+				</div>
+				
+				<button type="submit" class="btn btn-primary btn-full">
+					<span aria-label="WhatsApp">📱</span> Enviar por WhatsApp
+				</button>
+			</form>
+		</div>
+	</section>
+
+	<!-- Testimonios -->
+	<section class="testimonios">
+		<div class="container">
+			<h2 class="section-title">Lo que dicen nuestros clientes</h2>
+			<div class="testimonios-grid">
+				<div class="testimonio">
+					<p class="testimonio-text">"Los budines de LisCake son increíbles. Sabor casero y precio justo."</p>
+					<cite class="testimonio-author">— María, Pocitos</cite>
+				</div>
+				<div class="testimonio">
+					<p class="testimonio-text">"Perfecto para la merienda familiar. Siempre pedimos el de chocolate."</p>
+					<cite class="testimonio-author">— Carlos, Cordón</cite>
+				</div>
+				<div class="testimonio">
+					<p class="testimonio-text">"Entrega rápida y producto fresco. ¡Muy recomendable!"</p>
+					<cite class="testimonio-author">— Ana, Carrasco</cite>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FAQ -->
+	<section class="faq">
+		<div class="container">
+			<h2 class="section-title">Preguntas Frecuentes</h2>
+			<div class="faq-list">
+				<div class="faq-item">
+					<h3 class="faq-question">¿Hacen envíos a domicilio?</h3>
+					<p class="faq-answer">Sí, realizamos envíos en Montevideo y alrededores. El costo del envío se coordina según la zona.</p>
+				</div>
+				<div class="faq-item">
+					<h3 class="faq-question">¿Qué medios de pago aceptan?</h3>
+					<p class="faq-answer">Aceptamos efectivo, transferencia bancaria y billeteras digitales (Mercado Pago).</p>
+				</div>
+				<div class="faq-item">
+					<h3 class="faq-question">¿Cuánto tiempo tardan en preparar un pedido?</h3>
+					<p class="faq-answer">Los pedidos se preparan en 24-48 horas. Para pedidos urgentes, consultanos por WhatsApp.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-brand">
+					<h3>LisCake</h3>
+					<p>Budines y bizcochos artesanales</p>
+				</div>
+				<div class="footer-contact">
+					<h4>Contacto</h4>
+					<p>📱 WhatsApp: +598 98 190 042</p>
+					<p>📷 Instagram: @liscake_uy</p>
+					<p>📍 Montevideo, Uruguay</p>
+				</div>
+				<div class="footer-links">
+					
+					<a href="https://instagram.com/liscake_uy" class="footer-link" target="_blank" rel="noopener">Instagram</a>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>&copy; 2024 LisCake. Todos los derechos reservados.</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
