@@ -5,7 +5,7 @@
 
 // === CONFIGURACIÓN ===
 const CONFIG = {
-	whatsappNumber: '59899123456',
+	whatsappNumber: '59898190042',
 	baseWhatsAppURL: 'https://wa.me/'
 };
 
